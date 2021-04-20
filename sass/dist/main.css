@@ -1,0 +1,874 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  border: none;
+  outline: none;
+  color: #070439;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1318px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1215px) {
+  main .top__headings h1 {
+    font-size: 2.3rem;
+  }
+  main .top__headings p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1125px) {
+  main .top__headings {
+    padding-top: 40px;
+  }
+  main .top__headings h1 {
+    font-size: 2.1rem;
+  }
+  main .top__headings p {
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+  main .top__headings .top__input-sec input {
+    padding: 10px 15px;
+    width: 48%;
+  }
+  main .top__headings .top__input-sec button {
+    padding: 11px 0px;
+  }
+
+  .middle__section .middle__headings .heading {
+    font-size: 2.1rem;
+  }
+  .middle__section .middle__headings .para {
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+  .middle__section .middle__headings .card-sec {
+    width: 68%;
+  }
+
+  .early__access-sec .early__access-headings .head {
+    font-size: 1.6rem;
+  }
+  .early__access-sec .early__access-headings p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width: 1025px) {
+  main .top__headings {
+    padding-top: 50px;
+  }
+  main .top__headings h1 {
+    font-size: 1.7rem;
+  }
+  main .top__headings p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+  main .top__headings .top__input-sec input {
+    padding: 8px 15px;
+    width: 45%;
+    font-size: 12px;
+  }
+  main .top__headings .top__input-sec button {
+    padding: 9px 0px;
+    width: 32%;
+    font-size: 12px;
+  }
+
+  .middle__section .middle__headings .heading {
+    font-size: 1.7rem;
+  }
+  .middle__section .middle__headings .para {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+  .middle__section .middle__headings .card-sec {
+    width: 75%;
+  }
+  .middle__section .middle__headings .card-sec .card__para p {
+    font-size: 0.7rem;
+    line-height: 1.7;
+  }
+
+  .early__access-sec .early__access-input input {
+    padding: 12px 0px;
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  .early__access-sec .early__access-input button {
+    padding: 12px 0px;
+    width: 49%;
+  }
+}
+@media screen and (max-width: 840px) {
+  main .top__headings {
+    padding-top: 60px;
+  }
+  main .top__headings h1 {
+    font-size: 1.43rem;
+  }
+  main .top__headings p {
+    font-size: 0.64rem;
+    line-height: 1.6;
+  }
+  main .top__headings .top__input-sec input {
+    padding: 6px 15px;
+  }
+  main .top__headings .top__input-sec button {
+    padding: 7px 0px;
+  }
+
+  .middle__section .middle__headings .heading {
+    font-size: 1.42rem;
+  }
+  .middle__section .middle__headings .para {
+    font-size: 0.65rem;
+    line-height: 1.6;
+  }
+  .middle__section .middle__headings .card-sec {
+    width: 85%;
+  }
+  .middle__section .middle__headings .card-sec .card__para p {
+    font-size: 0.65rem;
+    line-height: 1.7;
+  }
+
+  .early__access-sec .early__access-headings .head {
+    font-size: 1.4rem;
+  }
+  .early__access-sec .early__access-headings p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+  .early__access-sec .early__access-input input {
+    padding: 10px 0px;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .early__access-sec .early__access-input button {
+    padding: 10px 0px;
+    font-size: 13px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 35px 0px;
+  }
+  .header .navbar .logo {
+    width: 20%;
+  }
+  .header .navbar .nav li {
+    margin-left: 28px;
+    font-size: 14px;
+  }
+
+  main .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main img {
+    padding-top: 50px;
+    width: 140%;
+    position: relative;
+    right: 40px;
+  }
+  main .top__headings {
+    padding-top: 30px;
+  }
+  main .top__headings h1 {
+    font-size: 1.8rem;
+  }
+  main .top__headings p {
+    padding: 0px 40px;
+    padding-bottom: 20px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  main .top__headings .top__input-sec {
+    margin-bottom: -80px;
+  }
+  main .top__headings .top__input-sec form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .top__headings .top__input-sec input {
+    padding: 15px 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 500px) {
+  main .top__headings .top__input-sec input {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .top__headings .top__input-sec button {
+    padding: 15px 0px;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 500px) {
+  main .top__headings .top__input-sec button {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .middle__section {
+    text-align: center;
+  }
+  .middle__section .middle__headings .heading {
+    margin-top: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 380px) {
+  .middle__section .middle__headings .heading {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 330px) {
+  .middle__section .middle__headings .heading {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .middle__section .middle__headings .para {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 380px) {
+  .middle__section .middle__headings .para {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 330px) {
+  .middle__section .middle__headings .para {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .middle__section .middle__headings .card-sec {
+    position: relative;
+    left: 50px;
+    text-align: left;
+    width: 76%;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 445px) {
+  .middle__section .middle__headings .card-sec {
+    position: relative;
+    left: 38px;
+    text-align: left;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 395px) {
+  .middle__section .middle__headings .card-sec {
+    position: relative;
+    left: 20px;
+    text-align: left;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 360px) {
+  .middle__section .middle__headings .card-sec {
+    position: relative;
+    left: 10px;
+    text-align: left;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 325px) {
+  .middle__section .middle__headings .card-sec {
+    position: relative;
+    left: 2px;
+    text-align: left;
+    width: 98%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .middle__section .middle__headings .card-sec .quote-icon img {
+    margin-top: -40px;
+    position: relative;
+    left: 0px;
+    width: 5.6%;
+    padding-bottom: 6px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .middle__section .middle__headings .card-sec .card__para p {
+    font-size: 0.68rem;
+    line-height: 1.7;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 445px) {
+  .middle__section .middle__headings .card-sec .card__para p {
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 720px) {
+  .middle__section .middle__flex {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .middle__section .background-curve {
+    background-image: url(/images/bg-curve-mobile.svg);
+    padding-top: 45px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .early__access-sec {
+    text-align: center;
+  }
+  .early__access-sec .early__access {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .early__access-sec .early__access-headings .head {
+    margin-top: -25px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 500px) {
+  .early__access-sec .early__access-headings .head {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .early__access-sec .early__access-headings p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 500px) {
+  .early__access-sec .early__access-headings p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .early__access-sec .early__access-input input {
+    margin-top: 20px;
+    padding: 14px 0px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 500px) {
+  .early__access-sec .early__access-input input {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .early__access-sec .early__access-input button {
+    padding: 14px 0px;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 500px) {
+  .early__access-sec .early__access-input button {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__section {
+    font-size: 15px;
+  }
+  .footer__section .footer-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .footer__section .about-us {
+    margin-top: 25px;
+  }
+  .footer__section .contact-us {
+    margin-top: 25px;
+  }
+  .footer__section .social-media-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header .navbar .logo {
+    width: 22%;
+  }
+  .header .navbar .nav li {
+    margin-left: 22px;
+    font-size: 13.4px;
+  }
+
+  main .top__headings h1 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header .navbar .logo {
+    width: 25%;
+  }
+  .header .navbar .nav li {
+    margin-left: 18px;
+    font-size: 12px;
+  }
+
+  main img {
+    width: 160%;
+  }
+  main .top__headings h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 370px) {
+  main .top__headings h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 340px) {
+  main .top__headings h1 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 300px) {
+  main .top__headings h1 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .top__headings p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 370px) {
+  main .top__headings p {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 340px) {
+  main .top__headings p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 300px) {
+  main .top__headings p {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 950px) and (max-width: 390px) {
+  main .top__section {
+    margin-bottom: -40px;
+  }
+}
+@media screen and (max-width: 950px) {
+  main .middle__section .background-curve {
+    transform: translateY(-50px);
+  }
+}
+@media screen and (max-width: 950px) and (max-width: 350px) {
+  main .middle__section .background-curve {
+    transform: translateY(-40px);
+  }
+}
+header {
+  padding: 65px 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: none;
+}
+.nav li {
+  margin-left: 58px;
+  font-weight: 400;
+}
+.nav li a {
+  color: #585989;
+}
+.nav li::after {
+  content: " ";
+  display: block;
+  width: 0%;
+  padding-top: 5px;
+  border-bottom: 2px solid #585989;
+  transition: 0.4s;
+}
+.nav li:hover::after {
+  width: 100%;
+}
+
+.top__section {
+  padding-top: 15px;
+}
+
+.top__headings {
+  color: #070439;
+  padding-bottom: 45px;
+}
+.top__headings h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+.top__headings p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 25px;
+  word-spacing: 1.5px;
+}
+
+.top__input-sec form {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: none;
+}
+.top__input-sec input {
+  padding: 13px 18px;
+  width: 54.5%;
+  margin-right: 12px;
+  border: 1px solid #070439;
+  border-radius: 2px;
+  font-size: 14px;
+}
+.top__input-sec button {
+  padding: 14px 5px;
+  width: 34%;
+  background: #2F65F9;
+  border-radius: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 1px 1px 6px #7e7878;
+}
+.top__input-sec button:hover {
+  transform: scale(0.99);
+}
+
+.top__img {
+  width: 50%;
+}
+
+.middle__section {
+  margin-top: 230px;
+  padding-bottom: 35px;
+  background: #F9F8FE;
+}
+
+.background-curve {
+  background-image: url(/images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 180px;
+  transform: translateY(-75px);
+}
+
+.middle__flex {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.middle__img {
+  width: 40%;
+}
+
+.middle__headings {
+  color: #070439;
+}
+.middle__headings .heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 35px;
+}
+.middle__headings .para {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.middle__headings .para2 {
+  padding: 18px 0px;
+}
+.middle__headings span {
+  font-family: "Open Sans", sans-serif;
+  color: #3c9f8f;
+  border-bottom: 1px solid #3c9f8f;
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+.middle__headings span ion-icon {
+  color: #F9F8FE;
+  background: #3c9f8f;
+  font-size: 11px;
+  border-radius: 50%;
+  padding: 1px;
+  position: relative;
+  top: 1.3px;
+  left: 3px;
+}
+
+.card-sec {
+  margin-top: 40px;
+  background: #F9F8FE;
+  padding: 27px 33px;
+  width: 54%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px #dad0d0;
+}
+
+.quote-icon img {
+  width: 5.6%;
+  padding-bottom: 6px;
+}
+
+.card__para p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  word-spacing: 3.5px;
+  color: #070439;
+  padding-bottom: 16px;
+}
+
+.card__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: none;
+}
+
+.profile__img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url(/images/avatar-testimonial.jpg);
+  background-size: cover;
+}
+
+.profile__name {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 10px;
+}
+.profile__name .name {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  padding-bottom: 1px;
+}
+.profile__name .pos {
+  font-size: 9px;
+  letter-spacing: 0.2px;
+}
+
+.early__access-sec {
+  padding-top: 98px;
+  padding-bottom: 81px;
+  background: #585989;
+}
+
+.early__access {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.early__access-headings {
+  color: #F9F8FE;
+}
+.early__access-headings .head {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding-top: 2px;
+  padding-bottom: 18px;
+}
+.early__access-headings p {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
+}
+
+.early__access-input input {
+  padding: 15px 0px;
+  padding-left: 30px;
+  width: 100%;
+  border-radius: 3px;
+}
+.early__access-input button {
+  margin-top: 15px;
+  padding: 15px 0px;
+  width: 42%;
+  border-radius: 3px;
+  color: #F9F8FE;
+  background-color: #3065f8;
+  font-family: "Open Sans", sans-serif;
+}
+.early__access-input button:hover {
+  transform: scale(0.99);
+}
+
+footer {
+  background: #070439;
+}
+footer .foot-head {
+  padding-top: 110px;
+  padding-bottom: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: none;
+}
+footer .logo-2 {
+  filter: brightness(0) invert(1);
+}
+
+.foot-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: none;
+  padding-bottom: 15px;
+}
+.foot-flex img {
+  padding-top: 4px;
+  padding-right: 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 40px;
+  font-family: "Open Sans", sans-serif;
+  color: #F9F8FE;
+  padding-bottom: 30px;
+}
+.footer-grid a {
+  color: #F9F8FE;
+}
+
+.about-us li {
+  padding-bottom: 15px;
+}
+.about-us a:hover {
+  color: #9e9eb3;
+}
+
+.contact-us li {
+  padding-bottom: 15px;
+}
+.contact-us a:hover {
+  color: #9e9eb3;
+}
+
+.social-media-icon ion-icon {
+  font-size: 17px;
+}
+.social-media-icon ul {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: none;
+}
+.social-media-icon li {
+  margin: 0px 7px;
+  border: 1px solid #F9F8FE;
+  border-radius: 50px;
+  padding: 5px 5px;
+  padding-bottom: 1px;
+}
+.social-media-icon li:hover {
+  transform: translateY(-0.3rem);
+  transition: 0.5s;
+}
+
+.attribution {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #F9F8FE;
+  padding: 20px 0px;
+}
+.attribution a {
+  color: #F9F8FE;
+}

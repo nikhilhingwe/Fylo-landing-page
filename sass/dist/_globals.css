@@ -1,0 +1,12 @@
+.container {
+  max-width: 1318px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

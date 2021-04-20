@@ -1,0 +1,12 @@
+@import "./mixins";
+
+
+.container{
+    max-width: 1318px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.flex{
+    @include flex(row,center,space-between);
+}
